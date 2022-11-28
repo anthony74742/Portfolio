@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/*************************************************/
+
+body{
+    overflow-x: hidden;
+}
+
+header {
+    top: 0px;
+    position: fixed;
+    width: 90vw;
+    height: 10vh;
+    min-height: 70px;
+    max-height: 100px;
+    background-color: #0B182B;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 4vw;
+    padding-right: 6vw;
+}
+
+#logo {
+    height: 60px;
+    background-size: contain;
+}
+
+nav{
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: row;
+    gap: 120px;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+}
+
+#cv{
+    background-color: #0B18BF;
+    width: 180px;
+    height: 60px;
+    border-radius: 5px;
+    border-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+#present {
+    padding: 20px;
+    margin-top: 10vh;
+    width: 100vw;
+    height: 90vh;
+    background-color: #030C1B;
+}
+
+#moi{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+#nom-metier{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#nom{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 50px;
+    color: white;
+}
+
+#metier{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: white;
+}
