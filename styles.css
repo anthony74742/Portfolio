@@ -49,7 +49,10 @@ table {
 }
 
 /*************************************************/
-
+html{
+    scroll-behavior: smooth;
+    padding-top: 100px;
+}
 body{
     overflow-x: hidden;
     background-color: #030C1B;
@@ -92,6 +95,10 @@ nav a{
     font-weight: 600;
 }
 
+nav a:hover{
+    color: #FFD300;
+}
+
 #cv{
     background-color: #0B18BF;
     width: 180px;
@@ -109,9 +116,16 @@ nav a{
     font-weight: 600;
 }
 
+#cv:hover{
+    background-color: #0d1cee;
+}
+
+/**************************************/
+/**************************************/
+/**************************************/
+
 #present {
     position: relative;
-    margin-top: 100px;
     padding-top: 1vw;
     padding: 1vw;
     width: 100vw;
@@ -120,6 +134,12 @@ nav a{
     flex-direction: row;
     margin-left: 100px;
     gap: 200px;
+}
+
+#present:target{
+    padding-top: 100px;
+    margin-top: -100px;
+    color: yellow;
 }
 
 #moi{
@@ -165,6 +185,7 @@ svg{
     display: none;
     transition: all 1s;
 }
+
 /********************************/
 /********************************/
 /********************************/
@@ -185,8 +206,8 @@ svg{
     flex-direction: column;
 }
 
-#competence-text{
-    font-size: 50px;
+.titre{
+    font-size: 40px;
     font-family: NyghtSerif;
     color: white;
 }
@@ -205,6 +226,80 @@ svg{
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
 }
 
+.card{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+
+.card img{
+    width: 40%;
+}
+
+.nom_lang{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 22px;
+    color: white;
+}
+
+.desc_lang{
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-size: 16px;
+    color: white;
+}
+
+/********************************/
+/********************************/
+/********************************/
+
+#portfolio{
+    width: 100vw;
+    height: 100vh;
+}
+
+#portfolio:target{
+    padding-top: 100px;
+    margin-top: -100px;
+    color: yellow;
+}
+
+#all_portfolio{
+    margin: 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+#projets{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.projet{
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.img_projet{
+    width: 300px;
+    height: 300px;
+    background-color: white;
+}
+
+.desc_projet{
+    width: 300px;
+    height: 300px;
+    background-color: yellow;
+}
 /*
 Responsive Part
 */
