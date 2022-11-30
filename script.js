@@ -34,14 +34,16 @@ projet.forEach(e => {
         gsap.to(e.querySelector('.desc_projet'),{
             duration: 0.5,
             yPercent: -100,
-            yoyo:true
+            yoyo:true,
+            ease: "power1.out"
         })       
     });
     e.addEventListener("mouseleave", () => {
         gsap.to(e.querySelector('.desc_projet'),{
             duration: 0.5,
             yPercent: 0,
-            yoyo:true
+            yoyo:true,
+            ease: "power1.out"
         })
     });
 });
