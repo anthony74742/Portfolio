@@ -97,7 +97,10 @@ nav a{
 
 nav a:hover{
     color: #FFD300;
+    
 }
+
+
 
 #cv{
     background-color: #0B18BF;
@@ -299,6 +302,7 @@ svg{
     width: 300px;
     height: 300px;
     background-color: yellow;
+    transform: translateY(0%);
 }
 /*
 Responsive Part
