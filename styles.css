@@ -290,6 +290,7 @@ svg{
     height: 300px;
     overflow: hidden;
     margin-bottom: 20px;
+    border: 2px solid white;
 }
 
 .img_projet{
@@ -310,7 +311,13 @@ svg{
 #p0{
     background-image: url(Image/Image_Projet/MarioCacheCache.png);
     background-size: contain;
-    border: 2px solid white;
+
+}
+
+#p1{
+    background-image: url(Image/Image_Projet/SpamTheButton.png);
+    background-size: contain;
+
 }
 /*
 Responsive Part
