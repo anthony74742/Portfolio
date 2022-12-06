@@ -56,7 +56,7 @@ html{
 body{
     overflow-x: hidden;
     background-color: #030C1B;
-    height: 100vh;
+    height: fit-content;
 }
 
 header {
@@ -103,7 +103,6 @@ nav a:hover{
 
 
 #cv{
-    background-color: rgb(11, 24, 191);
     width: 180px;
     height: 60px;
     border-radius: 5px;
@@ -119,7 +118,11 @@ nav a:hover{
     font-weight: 600;
 }
 
-#cv:hover{
+.btn{
+    background-color: rgb(11, 24, 191);
+}
+
+.btn:hover{
     background-color: #0d1cee;
 }
 
@@ -258,6 +261,8 @@ svg{
     color: white;
 }
 
+
+
 /********************************/
 /********************************/
 /********************************/
@@ -283,6 +288,7 @@ svg{
 #projets{
     display: grid;
     grid-template-columns: repeat(3, 0.5fr);
+    justify-items: center;
 }
 
 .projet{
@@ -290,7 +296,8 @@ svg{
     height: 300px;
     overflow: hidden;
     margin-bottom: 20px;
-    border: 2px solid white;
+    /* border: 2px solid white; */
+    border-radius: 5px;
 }
 
 .img_projet{
@@ -300,12 +307,16 @@ svg{
 }
 
 .desc_projet{
-    width: 300px;
-    height: 250px;
+    width: 260px;
+    height: 230px;
     background-color: rgba(11, 23, 191, 0.9);
     transform: translateY(0%);
     display: flex;
     flex-direction: column;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 #p0{
@@ -319,6 +330,144 @@ svg{
     background-size: contain;
 
 }
+
+.title{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.lang p span{
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+}
+
+.desc{
+    margin-top: 20px;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+}
+
+.redirect{
+    justify-self: flex-end;
+}
+
+/*
+Contact
+*/
+
+#contact{
+    width: 100vw;
+    height: 45vw;
+    background-color: #121F32;
+    display: flex;
+    color: white;
+}
+
+#contact:target{
+    margin-top: -100px;
+    padding-top: 100px;
+}
+
+.container-contact{
+    width: 70%;
+    height: 70%;
+    background-color: #13163f;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.contact-haut{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.text-haut-contact{
+    font-size: 40px;
+}
+
+.text-bas-contact{
+    font-size: 20px;
+}
+
+.contact-bas{
+    width: 30%;
+    height: 30%;
+}
+
+.input-nom-email{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    gap: 30px;
+
+}
+
+.input-contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    height: 100%;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+.input-label{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.input-text{
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid white;
+    color: white;
+}
+
+input:focus {
+    outline:  none;
+
+}
+
+label{
+    font-size: 1.3em;
+}
+
+.button{
+    border-radius: 5px;
+    border: transparent;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    color: white;
+    width: 140px;
+    height: 40px;
+    display: flex;
+    justify-content: space-around;
+}
+/*
+Footer
+*/
+footer{
+    width: 100vw;
+    height: 20vh;
+}
+
 /*
 Responsive Part
 */

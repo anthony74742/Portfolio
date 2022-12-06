@@ -23,8 +23,8 @@
         <nav>
             <a href="#" class="nav" id="propos">A propos</a>
             <a href="#portfolio" class="nav" id="portfo">Portfolio</a>
-            <a href="" class="nav" id="contact">Contact</a>
-            <button id="cv" class="nav">Voir cv</button>
+            <a href="#contact1" class="nav">Contact</a>
+            <button id="cv" class="nav btn">Voir cv</button>
         </nav>
     </header>
     <section id="present">
@@ -73,11 +73,32 @@
             <div id="projets">
                 <div class="projet">
                     <div class="img_projet"></div>
-                    <div class="desc_projet"></div>
+                    <div class="desc_projet">
+                        <div class="title">
+                            <p>Cache Cache Mario</p>
+                        </div>
+                        <div class="lang">
+                            <p><span>Html</span> <span>Css</span> <span>Js</span></p>
+                        </div>
+                        <div class="desc">
+                            <p>je suis la description</p>
+                        </div>
+                    </div>
                 </div>
                 <div class="projet">
                     <div class="img_projet"></div>
-                    <div class="desc_projet"></div>
+                    <div class="desc_projet">
+                        <div class="title">
+                            <p>SpamTheButton</p>
+                        </div>
+                        <div class="lang">
+                            <p><span>Html</span> <span>Css</span> <span>Js</span></p>
+                        </div>
+                        <div class="desc">
+                            <p>je suis la description</p>
+                        </div>
+                        <a class="redirect" href="https://www.google.fr" target="_blank">Redirect</a>
+                    </div>
                 </div>
                 <div class="projet">
                     <div class="img_projet"></div>
@@ -101,6 +122,36 @@
             </div>
         </div>
     </section>
+    <section id="contact">
+        <div class="container-contact">
+            <div class="contact-haut">
+                <div class="text-haut-contact">Vous voulez me contacter ?</div>
+                <div class="text-bas-contact">Remplissez les champs présent ici-présent</div>
+            </div>
+            <div class="contact-bas">
+                <form class="input-contact">
+                    <div class="input-nom-email">
+                        <div class="input-label">
+                            <label for="nom">Nom</label>
+                            <input type="text" class="input-text" placeholder="nom">
+                        </div>
+                        <div class="input-label">
+                            <label for="Email">Email</label>
+                            <input type="email" class="input-text" placeholder="email">
+                        </div>
+                    </div>
+                    <div class="input-label">
+                        <label for="Message">Message</label>
+                        <input type="textarea" class="input-text" placeholder="message">
+                    </div>
+                </form>
+                <button class="button btn" type="submit">Envoyer<img src="Image/send.png" alt="" srcset=""></Envoyer></button>
+            </div>
+        </div>
+    </section>
+    <footer>
+        
+    </footer>
     <script src="script.js"></script>
 </body>
 </html>
