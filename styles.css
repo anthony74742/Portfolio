@@ -135,7 +135,7 @@ nav a:hover{
     padding-top: 1vw;
     padding: 1vw;
     width: 100vw;
-    height: fit-content;
+    height: 40vw;
     display: flex;
     flex-direction: row;
     margin-left: 100px;
@@ -183,8 +183,12 @@ nav a:hover{
 }
 
 #img{
-    height: fit-content;
-    width: fit-content;
+    height: 100%;
+    width: 80%;
+}
+
+#img img{
+    height: 100%;
 }
 
 svg{
@@ -530,7 +534,7 @@ Responsive Part
     ##Screen = B/w 320px to 479px
   */
   
-  @media (min-width: 320px) and (max-width: 480px) {
+  @media (max-width: 480px) {
 
     body{
         position: absolute;
@@ -547,5 +551,28 @@ Responsive Part
     svg{
         display: initial;
     }
-    
+    #present{
+        margin-left: 0;
+        padding: 0;
+        padding-top: 100px;
+        gap: 0;
+    }
+    #cartes{
+        justify-content: flex-start;
+        width: fit-content;
+        height: 500px;
+    }
+    .carte{
+        width: 90vw;
+        height: 100%;
+        margin-left: 5vw;
+        margin-right: 5vw;
+    }
+    #projets{
+        grid-template-columns: repeat(1, 0.5fr);
+    }
+    #cartes-container{
+        width: 100vw;
+        overflow-x: scroll;
+    }
   }
