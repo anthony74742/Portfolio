@@ -126,6 +126,11 @@ nav a:hover{
     background-color: #0d1cee;
 }
 
+.NavButton{
+    border: none;
+    background-color: transparent;
+}
+
 /**************************************/
 /**************************************/
 /**************************************/
@@ -194,6 +199,7 @@ nav a:hover{
 svg{
     display: none;
     transition: all 1s;
+    fill: white;
 }
 
 /********************************/
@@ -554,11 +560,17 @@ Responsive Part
     #all-competence{
         align-items: center;
     }
+    #portfolio{
+        height: fit-content;
+    }
     #all_portfolio{
         margin: 0px;
         justify-content: center;
         align-items: center;
         height: 100%;
+    }
+    .titre{
+        margin-top: 4%;
     }
     #present{
         margin-left: 0;
@@ -583,5 +595,59 @@ Responsive Part
     #cartes-container{
         width: 100vw;
         overflow-x: scroll;
+    }
+    #contact {
+        width: 100vw;
+        height: fit-content;
+        background-color: #121F32;
+        display: flex;
+        color: white;
+    }
+    .container-contact {
+        width: 100%;
+        height: 70%;
+        background-color: #13163f;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        gap: 50px;
+    }
+
+    label {
+        font-size: 1rem
+    }
+    .contact-haut {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-family: 'Open Sans', sans-serif;
+    }
+    .text-haut-contact{
+        font-size: 30px;
+    }
+    .text-bas-contact{
+        font-size: 15px;
+    }
+    .contact-bas {
+        width: fit-content;
+        height: 30%;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+    .input-contact {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        height: fit-content;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
+        gap: 40px;
+    }
+    .button{
+        margin-bottom: 2%;
     }
   }
