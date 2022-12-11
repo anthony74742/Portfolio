@@ -271,7 +271,9 @@ svg{
     color: white;
 }
 
-
+#arrow{
+    display: none;
+}
 
 /********************************/
 /********************************/
@@ -577,6 +579,18 @@ Responsive Part
         padding: 0;
         padding-top: 100px;
         gap: 0;
+        height: fit-content;
+        flex-direction: column;
+        align-items: center;
+    }
+    #img{
+        width: 70%;
+    }
+    #img img{
+        width: 100%;
+    }
+    #competence{
+        height: fit-content;
     }
     #cartes{
         justify-content: flex-start;
@@ -595,6 +609,11 @@ Responsive Part
     #cartes-container{
         width: 100vw;
         overflow-x: scroll;
+    }
+    #arrow{
+        display: block;
+        width: 20%;
+        fill: white;
     }
     #contact {
         width: 100vw;
@@ -623,12 +642,13 @@ Responsive Part
         flex-direction: column;
         align-items: center;
         font-family: 'Open Sans', sans-serif;
+        margin-top: 2%;
     }
     .text-haut-contact{
-        font-size: 30px;
+        font-size: 20px;
     }
     .text-bas-contact{
-        font-size: 15px;
+        font-size: 10px;
     }
     .contact-bas {
         width: fit-content;
@@ -646,6 +666,9 @@ Responsive Part
         font-family: 'Montserrat', sans-serif;
         font-weight: 600;
         gap: 40px;
+    }
+    .input-nom-email{
+        flex-direction: column;
     }
     .button{
         margin-bottom: 2%;
