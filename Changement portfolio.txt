@@ -1,0 +1,47 @@
+#contact {
+    width: 100vw;
+    height: fit-content;
+    background-color: #121F32;
+    display: flex;
+    color: white;
+}
+
+.container-contact {
+    width: 70%;
+    height: 70%;
+    background-color: #13163f;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 50px;
+}
+
+.contact-haut {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.contact-bas {
+    width: fit-content;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.input-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    /* margin-bottom: 100px; */
+    /* height: auto; */
+    height: fit-content;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    gap: 40px;
+}
