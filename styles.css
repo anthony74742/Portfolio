@@ -289,7 +289,7 @@ svg{
 
 #portfolio{
     width: 100vw;
-    height: 100vh;
+    height: fit-content;
 }
 
 #portfolio:target{
@@ -343,13 +343,17 @@ svg{
 #p0{
     background-image: url(Image/Image_Projet/MarioCacheCache.png);
     background-size: contain;
-
 }
 
 #p1{
     background-image: url(Image/Image_Projet/SpamTheButton.png);
     background-size: contain;
 
+}
+
+#p2{
+    background-image: url(Image/Image_Projet/ImageWorkshop1.png);
+    background-size: cover;
 }
 
 .title{
@@ -369,7 +373,7 @@ svg{
     margin-top: 20px;
     color: white;
     font-family: 'Open Sans', sans-serif;
-    font-size: 12px;
+    font-size: 14px;
 }
 
 .redirect{
@@ -563,6 +567,10 @@ Responsive Part
     header{
         gap: 0px;
         justify-content: space-between;
+    }
+    #moi{
+        width: 80%;
+        margin-bottom: 10%;
     }
     nav{
         display: none;
