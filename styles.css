@@ -339,6 +339,7 @@ svg{
     gap: 10px;
 }
 
+
 #p0{
     background-image: url(Image/Image_Projet/MarioCacheCache.png);
     background-size: contain;
@@ -373,6 +374,8 @@ svg{
 
 .redirect{
     justify-self: flex-end;
+    color: white;
+    text-decoration: underline;
 }
 
 /*
