@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+
     <meta
   name="description"
   content="Voici mon portfolio">
@@ -126,22 +128,24 @@
             <div class="contact-haut">
                 <div class="text-haut-contact">Vous voulez me contacter ?</div>
                 <div class="text-bas-contact">Remplissez les champs présent ici-présent</div>
+                <div>ou</div>
+                <div>joignez moi depuis cette adresse : antho230104@gmail.com</div>
             </div>
             <div class="contact-bas">
-                <form class="input-contact">
+                <form class="input-contact" action="mailto:antho230104@gmail.com?subject=demande d'offre Portfolio">
                     <div class="input-nom-email">
                         <div class="input-label">
                             <label for="nom">Nom</label>
-                            <input type="text" class="input-text" placeholder="nom">
+                            <input type="text" class="input-text" placeholder="nom" required>
                         </div>
                         <div class="input-label">
                             <label for="Email">Email</label>
-                            <input type="email" class="input-text" placeholder="email">
+                            <input type="email" class="input-text" placeholder="email" required>
                         </div>
                     </div>
                     <div class="input-label">
                         <label for="Message">Message</label>
-                        <input type="textarea" class="input-text" placeholder="message">
+                        <input type="textarea" class="input-text" placeholder="message" required>
                     </div>
                 </form>
                 <button class="button btn" type="submit">Envoyer<img src="Image/send.png" alt="" srcset=""></Envoyer></button>
